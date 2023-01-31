@@ -1,7 +1,10 @@
+block variables
+
 doctype html
-html
+html(lang=en)
   head
-    title Simple Web Site - #{title}
+    block title
+      title Simple Web Site - #{title}
     block styles
       link(rel="stylesheet" href="/css/style.css")
 
@@ -14,4 +17,4 @@ html
     block content
 
     block footer
-      include ../partials/header
+      include ../partials/footer
