@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "pug ./src/pages -o ./build",
+    "build": "cpx -C \"./public/**/*\" build & pug ./src/pages -o ./build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cpx": "^1.5.0",
     "pug-cli": "^1.0.0-alpha6"
   }
 }
